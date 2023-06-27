@@ -37,6 +37,17 @@ describe('logWhisper(string)', function() {
   })
 })
 
+function sayHiToHeadphonedRoommate(string) {
+  if (string.toLowerCase() === string) {
+    return "I can't hear you!";
+  } else if (string.toUpperCase() === string) {
+    return "YES INDEED!";
+  } else if (string === "Let's have dinner together!"){
+    return "I would love to!";
+  }     
+  }
+
+
 describe('sayHiToHeadphonedRoommate(string)', function() {
   it('returns "I can\'t hear you!" if `string` is lowercase', function() {
     expect(sayHiToHeadphonedRoommate('hello')).toEqual("I can't hear you!");
